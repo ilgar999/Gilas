@@ -19,7 +19,7 @@ Feature: Google search functionality
   Scenario: User search title verification
     Given User is on Google home page
     When User searches for "orange"
-    Then User should see "orange" in the title
+    Then User should see "orange - Google Search" in the title
 
   @-016
   Scenario: Google home page footer links verification

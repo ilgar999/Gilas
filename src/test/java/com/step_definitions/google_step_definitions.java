@@ -43,9 +43,10 @@ public class google_step_definitions {
     @Then("User should see apple in the title")
     public void user_should_see_apple_in_the_title() {
 
-        String actualTitle = "Apple";
+        String actualTitle = "Apple - Google Search";
         String expectedTitle = Driver.getDriver().getTitle();
-        Assert.assertTrue("Actual title is not matching expected title", expectedTitle.contains(actualTitle));
+        Assert.assertEquals("Actual title is not matching expected title",
+                expectedTitle, actualTitle);
 
     }
 
@@ -60,7 +61,7 @@ public class google_step_definitions {
 
         String actualTitle = string;
         String expectedTile = Driver.getDriver().getTitle();
-        Assert.assertEquals("Not matching", expectedTile.contains(actualTitle));
+        Assert.assertEquals("Not matching", expectedTile, actualTitle);
 
     }
 
