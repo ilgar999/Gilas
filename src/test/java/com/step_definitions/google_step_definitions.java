@@ -1,6 +1,7 @@
 package com.step_definitions;
 
 import com.pages.Google;
+import com.utilities.BrowserUtil;
 import com.utilities.ConfigurationReader;
 import com.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -73,6 +74,7 @@ public class google_step_definitions {
             System.out.println("Each link: " + eachLink.getText());
         }
 
+        BrowserUtil.sleep(2);
     }
 
 

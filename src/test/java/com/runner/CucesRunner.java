@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         glue = "com/step_definitions",
         features = "src/test/resources/Features",
         dryRun = false,
-        tags = "@-015"
+        tags = "@-016"
 )
 
 public class CucesRunner {
