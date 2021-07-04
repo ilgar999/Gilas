@@ -29,7 +29,7 @@ public class google_step_definitions {
 
         String actualTitle = "Google";
         String expectedTitle = Driver.getDriver().getTitle();
-        Assert.assertEquals(actualTitle,expectedTitle, "Something wrong in the title");
+        Assert.assertTrue(expectedTitle.contains(actualTitle));
 
     }
 
@@ -45,8 +45,7 @@ public class google_step_definitions {
 
         String actualTitle = "Apple";
         String expectedTitle = Driver.getDriver().getTitle();
-        Assert.assertEquals(actualTitle, expectedTitle,
-                "Actual title is not matching expected title");
+        Assert.assertTrue("Actual title is not matching expected title", expectedTitle.contains(actualTitle));
 
     }
 
@@ -61,7 +60,7 @@ public class google_step_definitions {
 
         String actualTitle = string;
         String expectedTile = Driver.getDriver().getTitle();
-        Assert.assertEquals(actualTitle, expectedTile, "Not matching");
+        Assert.assertEquals("Not matching", expectedTile.contains(actualTitle));
 
     }
 
