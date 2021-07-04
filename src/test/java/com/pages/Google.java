@@ -16,7 +16,7 @@ public class Google {
     @FindBy(name = "q")
     public WebElement searchBox;
 
-    @FindBy(name = "//a[@class='pHiOh']")
+    @FindBy(xpath = "//a[@class='pHiOh']")
     public List<WebElement> expectLinks;
 
 }

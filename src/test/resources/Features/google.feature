@@ -25,8 +25,9 @@ Feature: Google search functionality
   Scenario: Google home page footer links verification
     Given User is on Google home page
     Then User should see following links
-      | Advertising      |
-      | Business         |
-      | How Search works |
-      | Privacy          |
-      | Terms            |
+      | Advertising               |
+      | Business                  |
+      | How Search works          |
+      | Carbon neutral since 2007 |
+      | Privacy                   |
+      | Terms                     |
